@@ -53,7 +53,7 @@ abstract contract INRC_Token is Initializable, ContextUpgradeable, IINRC{
     }
 
     function decimals() public view virtual override returns (uint8) {
-        return 6;
+        return 18;
     }
 
     function totalSupply() public view virtual override returns (uint256) {

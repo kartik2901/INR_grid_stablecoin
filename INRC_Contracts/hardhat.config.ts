@@ -14,9 +14,9 @@ export default {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     hardhat: {
-      gas: 1000000000000,
-      gasPrice: 10000000000,
-      initialBaseFeePerGas: 7,
+      gas: 30000000,
+      gasPrice: 1000000000,
+      initialBaseFeePerGas: 0,
       allowUnlimitedContractSize: true,
     },
     fuji: {
@@ -78,13 +78,14 @@ export default {
   solidity: {
     compilers: [
       {
-        version: "0.8.24",
-        // settings: {
-        //   // optimizer: {
-        //   //   enabled: false,
-        //   //   runs: 500,
-        //   // },
-        // },
+        version: "0.8.26",
+        settings: {
+          viaIR: true,
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
       },
     ],
   },
