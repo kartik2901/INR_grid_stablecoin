@@ -1,6 +1,6 @@
 {
   "name": "hardhat-project",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Hardhat project for INRC Contracts",
   "repository": {
     "type": "git",
