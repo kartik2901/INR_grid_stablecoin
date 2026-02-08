@@ -1,0 +1,38 @@
+@import "../../../public/theme/_var.scss";
+
+
+.for_business_page {
+    padding: 22.2rem 0;
+
+    .for_business_row {
+        &:not(:last-child) {
+            margin-bottom: 26.8rem;
+        }
+    }
+
+    h2 {
+        font-size: 6.4rem;
+        font-weight: 400;
+
+        span {
+            color: $gray8F;
+        }
+
+        &.gradient {
+            background: $gradient;
+            width: fit-content;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        max-width: 48.2rem;
+        margin-top: 2rem;
+        font-weight: 400;
+        color: rgba($white, 0.4);
+    }
+}

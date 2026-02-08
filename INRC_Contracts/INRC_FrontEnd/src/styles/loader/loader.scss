@@ -1,0 +1,21 @@
+@import "../../../public/theme/_var.scss";
+
+
+.global_loader {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1rem);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1110;
+
+    .spinner-border {
+        width: 4.2rem;
+        height: 4.2rem;
+        border-width: 0.3rem;
+    }
+}

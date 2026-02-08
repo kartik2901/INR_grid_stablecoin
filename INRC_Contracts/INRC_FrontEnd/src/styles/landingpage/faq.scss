@@ -1,0 +1,82 @@
+@import "../../../public/theme/_var.scss";
+
+
+.faq_section {
+    padding: 6.5rem 0 23.2rem;
+
+    h2 {
+        font-size: 9rem;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 2rem;
+            width: 6rem;
+            height: 6.6rem;
+            border-radius: 5.8rem;
+            border: 1px solid $gray3C;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .accordions {
+        margin-left: auto;
+        max-width: 67rem;
+
+        .accordion {
+            .accordion-item {
+                background-color: transparent;
+                border: none;
+
+                &:not(:last-child) {
+                    margin-bottom: 1.6rem;
+                }
+
+                .accordion-header {
+
+                    button {
+                        color: $greenclr;
+                        padding: 0;
+                        background-color: transparent;
+                        box-shadow: none !important;
+                        font-size: 26px;
+                        font-weight: 400;
+                        padding-bottom: 1.6rem;
+
+                        &::after {
+                            background-image: url(../../../public/icons/left-arrow.svg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            transform: none;
+                            margin-left: 3.4rem;
+                            width: 1.8rem;
+                            height: 2rem;
+                        }
+
+                        &.collapsed {
+                            opacity: 0.45;
+                            color: $white;
+                            border-bottom: 1px solid rgba($white, 0.45);
+
+                            &::after {
+                                background-image: url(../../../public/icons/right-arrow.svg);
+                            }
+                        }
+                    }
+                }
+
+                .accordion-body {
+                    padding: 3.2rem 0 1.6rem;
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                    color: rgba($white, 0.75);
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

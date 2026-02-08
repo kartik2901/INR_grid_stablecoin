@@ -1,0 +1,97 @@
+@import "../../../public/theme/_var.scss";
+
+.banner {
+    background-image: url(../../../public/images/banners.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    .banner_in {
+        padding: 13.4rem 0;
+
+        .banner_content {
+            width: fit-content;
+            padding: 10rem 0;
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50.2rem;
+                height: 86.4rem;
+                background-image: url(../../../public/images/rupee-symbol.png);
+                background-size: contain;
+                pointer-events: none;
+                z-index: -1;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            h1 {
+                font-size: 9rem;
+                font-weight: 300;
+                background: $gradient;
+                width: fit-content;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: rgba($white, 0.4);
+                max-width: 48rem;
+
+                span {
+                    font-size: 9rem;
+                    color: $white;
+                    margin-right: 3rem;
+                }
+            }
+        }
+        button {
+            padding:6px 12px;
+            background-color: transparent;
+            border-radius: 5px;
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF;
+            font-weight: 400;
+            width: 98px;
+            height: 27px;
+        }
+
+        ul {
+            position: absolute;
+            bottom: 0;
+            right: 14.2rem;
+            display: flex;
+            align-items: center;
+
+            li {
+                margin-left: 3rem;
+
+                a {
+                    svg {
+                        path {
+                            fill: rgba($white, 0.1);
+                        }
+                    }
+
+                    &:hover {
+                        svg {
+                            path {
+                                fill: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
